@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript" src="encrypt.js"></script>
     <title>Encryption</title>
 </head>
 <body>
     <h1>Encryption</h1>
     <h2>Explain the ciphers</h2>
-    <form action="cipher"></form>
+    <form action="">
+        <label for="name">Original phrase<label><br>
+        <input type="text" id="phrase" name="phrase"><br>
+        <label for="Shifter">Shifter<label><br>
+        <input type="number" id="shifter" name="shifter"><br>
+        <input type="submit" value="Submit" onclick="caesarCipher(phase, shifter)">
+    </form>
 </body>
 </html>
