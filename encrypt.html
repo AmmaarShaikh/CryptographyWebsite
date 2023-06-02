@@ -10,12 +10,14 @@
 <body>
     <h1>Encryption</h1>
     <h2>Explain the ciphers</h2>
-    <form action="">
-        <label for="name">Original phrase<label><br>
+    <form>
+        <label for="phrase">Original phrase</label><br>
         <input type="text" id="phrase" name="phrase"><br>
-        <label for="Shifter">Shifter<label><br>
+        <label for="shifter">Shifter</label><br>
         <input type="number" id="shifter" name="shifter"><br>
-        <input type="submit" value="Submit" onclick="caesarCipher(phase, shifter)">
+        <input type="submit" value="Submit" onclick="caesarCipher(phrase, shifter)">
     </form>
+    <p id="output">There is not output yet.</p>
+
 </body>
 </html>
