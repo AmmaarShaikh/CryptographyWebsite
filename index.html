@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <title>Menu</title>
     <script>
     </script>
 </head>
 <body>
-    <h1>Menu</h1>
-    <h2>Welcome to our website, click one the links below to either use the encryption or decryption tool</h2>
-    <br>
-    <h2>Caesar Cipher</h2>
-    <button onclick="window.location.href = 'encrypt.html';">Encryption</button>
-    <button onclick="window.location.href = 'decrypt.html';">Decryption</button>
+    <div id = "menu">
+        <h1>Cryptography Website</h1>
+    </div>
+    <div id="desc">
+        <h2>Welcome to our website, click one the links below to either use the encryption or decryption tool</h2>
+    </div>
+    <h3>Ciphers</h3>
+    <h3>Caesar Cipher</h3>
+    <div id="caesardiv">
+        <button id="caesar" onclick="window.location.href = 'encrypt.html';">Encryption</button>
+        <button id="caesar" onclick="window.location.href = 'decrypt.html';">Decryption</button>
+    </div>
+    <h3>Mystery Cipher</h3>
+    <div id="sub">
+        <button id="subs" onclick="window.location.href = 'Sube.html';">Encryption</button>
+        <button id="subs" onclick="window.location.href = 'Subd.html';">Decryption</button>
+    </div>
 </body>
 </html>

@@ -6,6 +6,48 @@ h1{
 h2{
     text-align: center;
 }
+h3{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font: bolder;
+}
 form{
     color: aqua;
+}
+#menu{
+    background-color: skyblue;
+    font-family: 'Oswald', sans-serif;
+    border-style: solid;
+}
+#desc{
+    background-color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+}
+#caesar{
+    background-color: #3289ae;
+    border: none;
+    color: white;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+#caesardiv{
+    text-align: center;
+}
+#sub{
+    background-color: #3289ae;
+    border: none;
+    color: white;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+#subs{
+    text-align: center;
 }

@@ -4,29 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="encrypt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <script type = "text/javascript" src="encrypt.js"></script>
-    <title>Encryption</title>
+    <link rel="stylesheet" href="Subd.css">
+    <script type = "text/javascript" src="Subd.js"></script>
+    <title>Document</title>
 </head>
 <body>
     <div id="menu">
-        <h1>Encryption</h1>
+        <h1>Decryption</h1>
     </div>
     <div id="desc">
-        <h2>The Caesar Cipher shifts the letters of the alphabet using a shift number</h2>
+        <h2>The Mystery Cipher flips every phrase</h2>
     </div>
     <div id="input">
-        <label for="phrase">Original phrase</label><br>
+        <label for="phrase">Encrypted phrase</label><br>
         <input type="text" id="phrase" name="phrase"><br>
-        <label for="shifter">Shifter</label><br>
-        <input type="number" id="shifter" name="shifter"><br>
         <input id="submit" type="submit" value="Submit" onclick="caesarCipher(phrase, shifter)">
     </form>
     <p id="output">There is not output yet.</p>
     </div>
-    <form>
+    <form action="cipher"></form>
 </body>
 </html>

@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="decrypt.css">
+    <script type = "text/javascript" src="decrypt.js"></script>
     <title>Decryption</title>
 </head>
 <body>
-    <h1>Decryption</h1>
-    <h2>Explain the ciphers</h2>
+    <div id="menu">
+        <h1>Decryption</h1>
+    </div>
+    <div id="desc">
+        <h2>The Caesar Cipher shifts the letters of the alphabet using a shift number</h2>
+    </div>
+    <div id="input">
+        <label for="phrase">Encrypted phrase</label><br>
+        <input type="text" id="phrase" name="phrase"><br>
+        <label for="shifter">Shifter</label><br>
+        <input type="number" id="shifter" name="shifter"><br>
+        <input id="submit" type="submit" value="Submit" onclick="caesarCipher(phrase, shifter)">
+    </form>
+    <p id="output">There is not output yet.</p>
+    </div>
     <form action="cipher"></form>
 </body>
 </html>

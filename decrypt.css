@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-underline-position: under;
+}
+h2{
+    text-align: center;
+}
+#menu{
+    background-color: skyblue;
+    font-family: 'Oswald', sans-serif;
+    border-style: solid;
+}
+#desc{
+    background-color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+}
+#input{
+    text-align: center;
+    font-weight: bold;
+    text-underline-position: under;
+    font-family: 'Oswald', sans-serif;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+#submit{
+    background: #0066A2;
+	color: white;
+	border-style: solid;
+	border-color: #0066A2;
+	height: 30px;
+	width: 80px;
+	font-family: 'Oswald', sans-serif;
+	text-shadow: none;
+}
