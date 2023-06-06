@@ -8,7 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <script type = "text/javascript" src="encrypt.js"></script>
+    <script>
+    function caesarCipher(){
+    phrase = document.getElementById("phrase").value;
+    shifter = parseInt(document.getElementById("shifter").value);
+    letters = phrase.split('');
+    newPhrase = "Your new phrase is :"
+    for (letter of letters){
+        newLetter = letter.charCodeAt(0)
+        console.log(newLetter)
+        newLetter += shifter
+        console.log(newLetter)
+        newPhrase += String.fromCharCode(newLetter)
+        console.log(newPhrase)
+    }
+    document.getElementById("output").innerHTML = newPhrase;
+    return false;
+    } 
+    </script>
     <title>Encryption</title>
 </head>
 <body>
@@ -19,14 +36,15 @@
         <h2>The Caesar Cipher shifts the letters of the alphabet using a shift number</h2>
     </div>
     <div id="input">
+    <form id = "thisform">
         <label for="phrase">Original phrase</label><br>
         <input type="text" id="phrase" name="phrase"><br>
         <label for="shifter">Shifter</label><br>
         <input type="number" id="shifter" name="shifter"><br>
-        <input id="submit" type="submit" value="Submit" onclick="caesarCipher(phrase, shifter)">
+        <input type="submit" value="Submit" onclick="caesarCipher(); return false;">
     </form>
     <p id="output">There is not output yet.</p>
     </div>
-    <form>
+    
 </body>
 </html>

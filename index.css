@@ -23,31 +23,38 @@ form{
     background-color: aliceblue;
     font-family: 'Oswald', sans-serif;
 }
-#caesar{
+.caesar{
+    width: auto;
+    height: auto;
     background-color: #3289ae;
-    border: none;
     color: white;
     padding: 15px 32px; 
-    text-align: center;
+    align-items: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
+    margin: 10px;
 }
 #caesardiv{
-    text-align: center;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
 #sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subs{
+
+    width: auto;
+    height: auto;
     background-color: #3289ae;
-    border: none;
     color: white;
     padding: 15px 32px; 
-    text-align: center;
+    align-items: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
-}
-#subs{
-    text-align: center;
+    margin: 10px;
 }

@@ -8,7 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="decrypt.css">
-    <script type = "text/javascript" src="decrypt.js"></script>
+    <script>
+        function caesarCipherDecrypt(phrase, shifter){
+            
+    phrase = document.getElementById("phrase").value;
+    shifter = parseInt(document.getElementById("shifter").value);
+    letters = phrase.split('');
+    newPhrase = "Your decrypted phrase is :"
+    for (letter of letters){
+        newLetter = letter.charCodeAt(0)
+        console.log(newLetter)
+        newLetter -= shifter
+        newPhrase += String.fromCharCode(newLetter)
+    }
+    document.getElementById("output").innerHTML = newPhrase;
+}
+    </script>
     <title>Decryption</title>
 </head>
 <body>
@@ -23,7 +38,7 @@
         <input type="text" id="phrase" name="phrase"><br>
         <label for="shifter">Shifter</label><br>
         <input type="number" id="shifter" name="shifter"><br>
-        <input id="submit" type="submit" value="Submit" onclick="caesarCipher(phrase, shifter)">
+        <input id="submit" type="submit" value="Submit" onclick="caesarCipherDecrypt(); return false;">
     </form>
     <p id="output">There is not output yet.</p>
     </div>
