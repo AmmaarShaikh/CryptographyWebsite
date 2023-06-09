@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="decrypt.css">
     <script>
-        function caesarCipherDecrypt(phrase, shifter){
-            
+    function caesarCipherDecrypt(phrase, shifter){
     phrase = document.getElementById("phrase").value;
     shifter = parseInt(document.getElementById("shifter").value);
     letters = phrase.split('');
@@ -19,7 +18,9 @@
         newLetter = letter.charCodeAt(0)
         console.log(newLetter)
         newLetter -= shifter
+        console.log(newLetter)
         newPhrase += String.fromCharCode(newLetter)
+        console.log(newPhrase)
     }
     document.getElementById("output").innerHTML = newPhrase;
 }

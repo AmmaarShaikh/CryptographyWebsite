@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="encrypt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script>
+    function caesarCipher(){
+    shifter = parseInt(document.getElementById("shifter").value);
+    shifter /= 0.849
+    shifter -= 73
+    shifter = Math.sqrt(shifter)    
+    shifter *= 13.993
+    shifter /= 4.737
+    output = Math.round(shifter)
+    document.getElementById("output").innerHTML = output;
+    return false;
+    } 
+    </script>
+    <title>Decryption</title>
+</head>
+<body>
+    <div id="menu">
+        <h1>Decryption</h1>
+    </div>
+    <div id="desc">
+        <h2>The Number Cipher takes any number and encrypts it</h2>
+    </div>
+    <div id="input">
+    <form id = "thisform">
+        <label for="shifter">Number</label><br>
+        <input type="number" id="shifter" name="shifter"><br>
+        <input type="submit" value="Submit" onclick="caesarCipher(); return false;">
+    </form>
+    <p id="output">There is not output yet.</p>
+    </div>
+    
+</body>
+</html>

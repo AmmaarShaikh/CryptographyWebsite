@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Sube.css">
+    <link rel="stylesheet" href="encrypt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <script>
-    function flip(phrase){
-    phrase = document.getElementById("phrase").value;
-    newPhrase = "";
-
-    for (var i = phrase.length - 1; i >= 0; i--) { 
-        newPhrase += phrase[i];
-    }
-    document.getElementById("output").innerHTML = newPhrase;
-    }
+    function caesarCipher(){
+    shifter = parseInt(document.getElementById("shifter").value);
+    shifter *= 4.737
+    shifter /= 13.993
+    shifter *= shifter
+    shifter += 73
+    shifter *= 0.849
+    output = shifter
+    document.getElementById("output").innerHTML = output;
+    return false;
+    } 
     </script>
+    <title>Encryption</title>
 </head>
 <body>
     <div id="menu">
         <h1>Encryption</h1>
     </div>
     <div id="desc">
-        <h2>The Mystery Cipher flips every phrase</h2>
+        <h2>The Number Cipher takes any number and encrypts it</h2>
     </div>
     <div id="input">
-        <label for="phrase">Original phrase</label><br>
-        <input type="text" id="phrase" name="phrase"><br>
-        <input id="submit" type="submit" value="Submit" onclick="flip(); return false;">
+    <form id = "thisform">
+        <label for="shifter">Number</label><br>
+        <input type="number" id="shifter" name="shifter"><br>
+        <input type="submit" value="Submit" onclick="caesarCipher(); return false;">
     </form>
     <p id="output">There is not output yet.</p>
     </div>
-    <form>
+    
 </body>
 </html>
